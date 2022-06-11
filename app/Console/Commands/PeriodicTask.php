@@ -18,7 +18,7 @@ class PeriodicTask extends Command
      *
      * @var string
      */
-    protected $description = 'Command description';
+    protected $description = 'Run task every minute';
 
     /**
      * Execute the console command.
@@ -41,7 +41,7 @@ class PeriodicTask extends Command
 
         if(!empty($users)) {
             foreach($users as $key => $user) {
-                if(!User::where('email', $user['e,ail'])->exists()) {
+                if(!User::where('email', $user['email'])->exists()) {
                     User::create([
                         'name' => $user['name'],
                         'email' => $user['email'],
