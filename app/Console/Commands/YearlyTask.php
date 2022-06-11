@@ -18,7 +18,7 @@ class YearlyTask extends Command
      *
      * @var string
      */
-    protected $description = 'Command description';
+    protected $description = 'Run task on 5th March each year';
 
     /**
      * Execute the console command.

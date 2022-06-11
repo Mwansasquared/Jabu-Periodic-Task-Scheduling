@@ -33,7 +33,13 @@ class Kernel extends ConsoleKernel
         $schedule->command('yearlyTask:cron')->yearlyOn(5,3,'10:00');
     }
 
-    protected $commands = [Commands\periodicTask::class];
+    protected $commands = 
+        [ Commands\PeriodicTask::class,
+          Commands\DailyTask::class,
+          Commands\WeeklyTask::class,
+          Commands\MonthlyTask::class,
+          Commands\YearlyTask::class
+        ];
 
     /**
      * Register the commands for the application.

@@ -18,7 +18,7 @@ class MonthlyTask extends Command
      *
      * @var string
      */
-    protected $description = 'Command description';
+    protected $description = 'Run task monthly on the 5th';
 
     /**
      * Execute the console command.

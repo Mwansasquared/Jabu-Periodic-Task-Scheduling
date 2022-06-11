@@ -11,7 +11,7 @@ class PeriodicTask extends Command
      *
      * @var string
      */
-    protected $signature = 'periodTask:cron';
+    protected $signature = 'periodicTask:cron';
 
     /**
      * The console command description.
@@ -33,7 +33,7 @@ class PeriodicTask extends Command
 
     public function handle()
     {
-        info("Cron Job running at ". now());
+        /*info("Cron Job running at ". now());
 
         $response = Http::get('https://jsonplaceholder.typicode.com/users');
 
@@ -49,7 +49,7 @@ class PeriodicTask extends Command
                     ]);
                 }
             }
-        }
+        }*/
 
         
         return 0;
