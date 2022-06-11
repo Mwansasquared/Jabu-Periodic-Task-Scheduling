@@ -18,7 +18,7 @@ class WeeklyTask extends Command
      *
      * @var string
      */
-    protected $description = 'Command description';
+    protected $description = 'Run task weekly on Mondays, Wednesdays, and Fridays';
 
     /**
      * Execute the console command.
