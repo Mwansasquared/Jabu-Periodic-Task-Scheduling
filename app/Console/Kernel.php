@@ -30,7 +30,7 @@ class Kernel extends ConsoleKernel
         $schedule->command('monthlyTask:cron')->monthlyOn(5,'10:00');
 
         //run task every year on 5th March
-        $schedule->command('yearlyTask:cron')->yearlyOn(5,3,'10:00');
+        $schedule->command('yearlyTask:cron')->yearlyOn(3,5,'10:00');
     }
 
     protected $commands = 
